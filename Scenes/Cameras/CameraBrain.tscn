@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dt4vd7ga1ih14"]
+
+[ext_resource type="Script" uid="uid://crrj1jc21jar7" path="res://addons/Umbra/Script/Core/CameraBrain.cs" id="1_td0sp"]
+
+[node name="Camera3D" type="Camera3D" unique_id=1662790785]
+cull_mask = 524287
+current = true
+far = 500.0
+script = ExtResource("1_td0sp")

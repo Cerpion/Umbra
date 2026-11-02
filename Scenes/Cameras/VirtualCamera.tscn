@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cn0lkf3c240ua"]
+
+[ext_resource type="Script" uid="uid://dp2k821p8tfek" path="res://addons/Umbra/Script/Core/VirtualCamera.cs" id="1_fi7or"]
+[ext_resource type="Script" uid="uid://6tdda17stw5e" path="res://addons/Umbra/Script/Resources/CameraData/LenData.cs" id="2_qgfqn"]
+
+[sub_resource type="Resource" id="Resource_qgfqn"]
+script = ExtResource("2_qgfqn")
+
+[node name="VirtualCamera" type="Node" unique_id=293089138]
+script = ExtResource("1_fi7or")
+Len = SubResource("Resource_qgfqn")
