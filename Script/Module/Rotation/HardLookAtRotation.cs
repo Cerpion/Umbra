@@ -10,6 +10,9 @@ namespace Umbra.Modules.Rotation
 
             Vector3 dir = (Camera.Follow.GlobalPosition - Camera.DesiredPosition).Normalized();
 
+            if (dir.LengthSquared() < Mathf.Epsilon)
+                return;
+
             Camera.DesiredRotation = Basis.LookingAt(dir).GetEuler();
         }
     }
